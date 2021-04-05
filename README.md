@@ -1,6 +1,16 @@
+##########################################################################################################################################################
+# Module     : AWS Config Terraform module
+# Summary    : Enables AWS Config, deploys Config rules and creates necessary resources for notifications per region.
+# Author     : Sherif ElTammimy
+##########################################################################################################################################################
+
+
+
 # AWS Config Terraform module
 
 Enables AWS Config, deploys Config rules and creates necessary resources for notifications per region.
+
+
 
 #### Terraform Resources
 
