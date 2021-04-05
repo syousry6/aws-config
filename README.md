@@ -16,6 +16,11 @@ Enables AWS Config, deploys Config rules and creates necessary resources for not
 - SNS Topic Policy
 - IAM Policy Document
 
+#### Directory Structure
+aws-config
+│    README.md
+│    module.tf  
+└─── config.tf
 
 ## Supported AWS Config Rules
 
