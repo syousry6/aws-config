@@ -125,11 +125,3 @@ module "aws_config" {
 | required\_tags | A map of required resource tags. Format is tagNKey, tagNValue, where N is int. Values are optional. | `map(string)` | `{}` | no |
 | required\_tags\_resource\_types | Resource types to check for tags. | `list(string)` | `[]` | no |
 | tags | Tags to apply to AWS Config resources | `map(string)` | `{}` | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| aws\_config\_role\_arn | The ARN of the AWS config role. |
-| aws\_config\_role\_name | The name of the IAM role used by AWS config |
-| required\_tags\_rule\_arn | The ARN of the required-tags config rule. |
