@@ -1,5 +1,5 @@
 
-# AWS Config Terraform module
+# Terraform Base template for AWS config
 
 Enables AWS Config, deploys Config rules and creates necessary resources for notifications per region.
 
