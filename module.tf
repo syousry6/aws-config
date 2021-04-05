@@ -2,7 +2,6 @@
 # Filename   : module.tf
 # Summary    : Variables for the Config module used by Onica to create an AWS Foundation
 # Author     : Sherif ElTammimy
-# Notes      : 
 ###################################################################################################################
 
 variable "aws_region" {
