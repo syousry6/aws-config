@@ -1,6 +1,6 @@
 ###################################################################################################################
 # Filename   : module.tf
-# Summary    : Variables for the Config module used by Onica to create an AWS Foundation
+# Summary    : Variables for the Config module for Celink | MAP-32
 # Author     : Sherif ElTammimy
 ###################################################################################################################
 
