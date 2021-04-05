@@ -17,10 +17,11 @@ Enables AWS Config, deploys Config rules and creates necessary resources for not
 - IAM Policy Document
 
 #### Directory Structure
-aws-config
-│    README.md
-│    module.tf  
-└─── config.tf
+.
+├── config.tf                   # Terraform Base template for AWS config for Celink that can be used to create AWS built-in config rules to monitor the accounts
+├── module.tf                    # The file has the module Standard variables
+├── README.md                    
+
 
 ## Supported AWS Config Rules
 
