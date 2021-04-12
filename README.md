@@ -112,7 +112,6 @@ module "aws_config" {
 | check\_ec2\_encrypted\_volumes | Enable ec2-encrypted-volumes rule | `bool` | `true` | no |
 | check\_ec2\_volume\_inuse\_check | Enable ec2-volume-inuse-check rule | `bool` | `true` | no |
 | check\_eip\_attached | Enable eip-attached rule | `bool` | `false` | no |
-| check\_iam\_group\_has\_users\_check | Enable iam-group-has-users-check rule | `bool` | `true` | no |
 | check\_iam\_root\_access\_key | Enable iam-root-access-key rule | `bool` | `true` | no |
 | check\_iam\_user\_no\_policies\_check | Enable iam-user-no-policies-check rule | `bool` | `true` | no |
 | check\_instances\_in\_vpc | Enable instances-in-vpc rule | `bool` | `true` | no |
@@ -123,15 +122,14 @@ module "aws_config" {
 | check\_required\_tags | Enable required-tags rule | `bool` | `false` | no |
 | check\_root\_account\_mfa\_enabled | Enable root-account-mfa-enabled rule | `bool` | `false` | no |
 | check\_s3\_bucket\_public\_write\_prohibited | Enable s3-bucket-public-write-prohibited rule | `bool` | `true` | no |
+| check\_s3\_bucket\_public\_read\_prohibited | Enable s3-bucket-public-write-prohibited rule | `bool` | `true` | no |
 | check\_vpc\_default\_security\_group\_closed | Enable vpc-default-security-group-closed rule | `bool` | `true` | no |
 | config\_delivery\_frequency | The frequency with which AWS Config delivers configuration snapshots. | `string` | `"Six_Hours"` | no |
 | config\_logs\_bucket | The S3 bucket for AWS Config logs. If you have set enable\_config\_recorder to false then this can be an empty string. | `string` | n/a | yes |
 | config\_logs\_prefix | The S3 prefix for AWS Config logs. | `string` | `"config"` | no |
-| config\_max\_execution\_frequency | The maximum frequency with which AWS Config runs evaluations for a rule. | `string` | `"TwentyFour_Hours"` | no |
 | config\_name | The name of the AWS Config instance. | `string` | `"aws-config"` | no |
 | config\_sns\_topic\_arn | An SNS topic to stream configuration changes and notifications to. | `string` | `null` | no |
 | enable\_config\_recorder | Enables configuring the AWS Config recorder resources in this module. | `bool` | `true` | no |
-| include\_global\_resource\_types | Specifies whether AWS Config includes all supported types of global resources with the resources that it records. | `bool` | `true` | no |
 | required\_tags | A map of required resource tags. Format is tagNKey, tagNValue, where N is int. Values are optional. | `map(string)` | `{}` | no |
 | required\_tags\_resource\_types | Resource types to check for tags. | `list(string)` | `[]` | no |
 | tags | Tags to apply to AWS Config resources | `map(string)` | `{}` | no |
